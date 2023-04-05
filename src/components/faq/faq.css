@@ -1,0 +1,51 @@
+#faq{
+    margin-top: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: -2rem;
+}
+
+.faqRight{
+    margin-left: -2rem;
+    background-color: antiquewhite;
+    width: 668px;
+    height: 56px;
+}
+
+.faqLeft{
+    /* background-color: aqua; */
+}
+
+@media only screen and(max-width : 1024px){
+    .faq{
+      width: 80%;
+    
+    }
+  }
+  /* MEDIA QUERIES MEDIUM QUERIES (Phone) */
+  @media (max-width : 657px){
+    #faq{
+        display: flex;
+        flex-direction: column;     
+        justify-content: center; 
+        margin: 420px 10px 10px 10px;
+        padding: 0;
+        
+    }
+
+    .faqLeft{ 
+        /* padding-left: -100px; */
+        width: 100%;
+   
+    }
+
+    .faqRight{ 
+        /* padding-left: -100px; */
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+
+   
+  }

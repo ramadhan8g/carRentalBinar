@@ -1,0 +1,40 @@
+.footerContainer{
+    display: flex;
+    margin-top: 400px;
+    gap: 0.5rem;
+    justify-content: space-around;
+}
+
+.footerDua p{
+    font-weight: normal;
+}
+
+.footerTigaImage{
+    display: flex;
+    gap: 0.8rem;
+}
+
+@media (max-width : 657px){
+    .footerContainer{
+        display: flex;
+        flex-direction: column;     
+        justify-content: center; 
+        margin: 360px 10px;
+        padding: 0;
+        
+    }
+
+    .faqLeft{ 
+        /* padding-left: -100px; */
+        width: 100%;
+   
+    }
+
+    .faqRight{ 
+        /* padding-left: -100px; */
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+
+}

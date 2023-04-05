@@ -1,0 +1,81 @@
+#service{
+    display: flex;
+    gap: 0rem;
+    margin:0.5rem 3rem;
+    /* background-color: beige; */
+    
+
+   
+
+}
+
+.service__img{
+    margin: 2rem 2rem 1rem 5rem;
+  
+    padding: 1rem 2.5rem;
+}
+
+.service__detail{
+    /* background-color: antiquewhite; */
+    margin: 2rem 4rem 1rem 3rem;
+    padding: 3.2rem 2rem 0.7rem 2rem;
+}
+
+.service__detail h2{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 1rem;
+}
+
+.service__detail p{
+    padding-bottom: 1rem;
+}
+
+.service__item{
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+/* MEDIA QUERIES MEDIUM QUERIES (TABLET) */
+@media only screen and(max-width : 1024px){
+    .service__section{
+      width: 60%;
+    }
+  }
+  /* MEDIA QUERIES MEDIUM QUERIES (Phone) */
+  @media (max-width : 657px){
+    #service{
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        background-size: cover;
+        width: 100%;
+        margin-top: 300px;
+        justify-content: center;
+    }
+
+    .service__img img{
+       width: 90%;
+    }
+
+    .service__detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .service__items{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: start; */
+        margin-left: -100px;
+    }
+   
+  }

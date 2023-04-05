@@ -1,0 +1,133 @@
+header {
+  background-color: var(--color-bg-variant);
+  height: 507px;
+}
+
+.hero__section {
+  
+  height: 450px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 0%;
+  padding: 2rem 0 1rem 3rem;
+  flex-wrap: wrap;
+}
+
+.hero__detail {
+  /* background-color: aqua; */
+  padding: 4rem 1rem 1rem 1rem;
+  width: 568px;
+}
+
+.hero__detail h1 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+.hero__detail p {
+  margin-bottom: 1rem;
+  width: 468px;
+  height: 60px;
+}
+
+.hero__detail a {
+  background-color: var(--color-primary-button);
+  color: var(--color-white);
+  padding: 8px 12px 8px 12px;
+  text-decoration: none;
+}
+
+.hero__detail a:hover {
+  text-decoration: none;
+}
+
+.hero__image {
+  /* background-color: blue; */
+  overflow: hidden;
+
+  background-size: cover;
+}
+
+.hero__image img {
+  width: 100%;
+}
+
+/* ----- Batas ------ */
+
+.navbarContainer {
+  background-color: var(--color-bg-variant);
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* text-decoration: none; */
+}
+
+.menuContainer {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  gap: 1rem;
+}
+
+.logoHeader {
+  /* background-color: blueviolet; */
+  overflow: visible;
+}
+
+.navbar span {
+  color: var(--color-primary);
+}
+.menu__container {
+  display: flex;
+  gap: 1rem;
+}
+
+/* .menu__container a{
+   
+} */
+
+/* MEDIA QUERIES MEDIUM QUERIES (TABLET) */
+@media only screen and(max-width : 1024px) {
+  .container.header__container {
+    width: 60%;
+  }
+}
+/* MEDIA QUERIES MEDIUM QUERIES (Phone) */
+@media (max-width: 600px) {
+  .header__container {
+    /* width: var(--container-width-sm); */
+    /* background-color: rgb(68, 0, 255); */
+  }
+
+  .navbarCollapse{
+    width: 50%;
+  }
+
+  .menuContainer {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(255, 254, 240); */
+  }
+
+  .logoHeader {
+    overflow: hidden;
+    /* display: none; */
+  }
+
+  .hero__section {
+    padding: 0;
+    background-size: cover;
+  
+  }
+
+  .hero__image {
+    width: 100%;
+    background-color: aqua;
+  }
+}

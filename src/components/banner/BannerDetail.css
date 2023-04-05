@@ -1,0 +1,82 @@
+.bannersearch__section {
+
+}
+
+.hero__section {
+  position: relative;
+  height: 200px;
+
+}
+
+.about__section {
+ 
+}
+
+.search__section {
+  position: absolute;
+  margin-top: -50px;
+  width: 1047px;
+  height: auto;
+  padding: 2rem;
+  margin-left: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.search__Container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search__Container a {
+  color: white;
+  background-color: var(--color-primary-button);
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px 8px 12px;
+
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+.search__Container a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+.about__section {
+  display: flex;
+  margin-top: 220px;
+}
+
+.about__detail li {
+  list-style: circle;
+}
+
+
+@media (max-width: 600px) {
+  .about__Result {
+    left: -148px;
+    background-color: aliceblue;
+  }
+ 
+  .car__Wrapper{
+    background-color: aqua;
+    margin-top: 10px;
+  }
+ .search__section{
+  background-color: brown;
+  top: 200px;
+ }
+
+ .about__section{
+  margin-top: 450px;
+  flex-wrap: wrap;
+ }
+  
+}

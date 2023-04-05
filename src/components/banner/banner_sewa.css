@@ -1,0 +1,81 @@
+.banner-sewa__items {
+  background-color: var(--color-primary);
+  position: absolute;
+  width: 1168px;
+  height: 326px;
+  color: var(--color-white);
+  text-align: center;
+  padding: 5rem 0rem;
+  border-radius: 7px;
+  margin-left: 100px;
+  justify-content: center;
+}
+
+.banner-sewa__items h1 {
+  padding: 3rem 0 1rem 0;
+  color: var(--color-white);
+  /* background-color: aqua; */
+}
+
+.banner-sewa__items p {
+  padding: 0.5rem 0 1rem 1rem;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  width: 800px;
+  margin: auto;
+  color: var(--color-white);
+}
+
+.banner-sewa__items a {
+  background-color: var(--color-primary-button);
+  text-decoration: none;
+  padding: 8px 12px 8px 12px;
+  color: var(--color-white);
+}
+
+.banner-sewa__items a:hover {
+  text-decoration: none;
+}
+
+@media only screen and(max-width : 1024px) {
+  .whyus__section {
+    width: 60%;
+  }
+}
+/* MEDIA QUERIES MEDIUM QUERIES (Phone) */
+@media (max-width: 657px) {
+  .section__banner-sewa {
+    display: flex;
+    flex-direction: column;
+    margin-left: -90px;
+    width: 96%;
+  }
+
+  .banner-sewa__items {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: -100px; */
+    width: 100%;
+    text-align: center;
+    height: 400px;
+  }
+
+  .banner-sewa__items h1 {
+    margin: auto;
+    color: white;
+  }
+
+  .banner-sewa__items p {
+    margin-left: -20px;
+    text-align: center;
+    color: white;
+    width: 95vw;
+  }
+
+  .banner-sewa__items a {
+    width: 50%;
+    margin: auto;
+    color: white;
+  }
+}
