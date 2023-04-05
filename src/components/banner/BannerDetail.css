@@ -31,18 +31,25 @@
   flex-wrap: wrap;
 }
 
-.search__Container a {
-  color: white;
+.search__Container button {
+  
   background-color: var(--color-primary-button);
-  text-decoration: none;
+  
   text-align: center;
   justify-content: center;
   align-items: center;
   padding: 8px 12px 8px 12px;
 
   border-radius: 2px;
-  margin-top: 10px;
+  margin-top: 30px;
+  color: white;
 }
+
+.search__Container p{
+  color: white;
+}
+
+
 
 .search__Container a:hover {
   color: blue;
@@ -58,19 +65,24 @@
   list-style: circle;
 }
 
+.about__Result{
+  margin-left: 148px;
+  margin-top: -80px;
+}
 
 @media (max-width: 600px) {
   .about__Result {
-    left: -148px;
+    margin-left: 50px;
+    margin-top: 10px;
     background-color: aliceblue;
   }
  
   .car__Wrapper{
-    background-color: aqua;
+   
     margin-top: 10px;
   }
  .search__section{
-  background-color: brown;
+  
   top: 200px;
  }
 

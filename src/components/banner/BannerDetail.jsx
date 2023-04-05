@@ -89,39 +89,41 @@ const BannerDetail = () => {
     </div>  
 
       <Card className="search__section">
-        <Form className="search__Container">
-        <Form.Group className="" controlId="exampleForm.ControlInput1">
+        <Form >
+        <fieldset disabled>
+          <div className="search__Container">
+            <Form.Group className="" controlId="exampleForm.ControlInput1">
               <Form.Label>Nama Mobil</Form.Label>
      
               <Form.Control
                 
                 id="nama"
-                placeholder="ketik nama/tipe mobil"
+                placeholder=""
               />
             </Form.Group>
 
             <Form.Group className="form__Input">
               <Form.Label>Kategori</Form.Label>
-              <Form.Select
+              <Form.Select htmlFor="disabledSelect" aria-disabled="disabled"
               
                 id=""
                 placeholder="Masukan Kapasitas Mobil"
                 type="select"
               >
-                <option hidden label="Masukan Kapasitas Mobil" value="" />
-                <option label="2 - 4 orang" value="small" />
+                <option hidden label="" value="" />
+                <option label="" value="2 - 4 orang" />
                 <option label="4 - 6 orang" value="medium" />
                 <option label="6 - 8 orang" value="large" />
               </Form.Select>
             </Form.Group>
 
-            <Form.Group className="form__Input">
-              <Form.Label>Harga</Form.Label>
+            <Form.Group className="form__Input" disabled>
+              <Form.Label>Harga</Form.Label >
               <Form.Select
                
                 placeholder="Masukan Harga Sewa per Hari"
               >
-                <option hidden label="Masukan Harga Sewa per Hari" value="" />
+                <option hidden label="" value="" />
                 <option value="small">{"<"} Rp. 400.000</option>
                 <option value="medium">Rp. 400.000 - Rp. 600.000</option>
                 <option value="large">{">"} Rp. 600.000</option>
@@ -135,16 +137,18 @@ const BannerDetail = () => {
                 id=""
                 placeholder="Disewa"
               >
-                <option hidden label="Disewa" value="" />
+                <option hidden label="" value="" />
                 <option value={true}>Disewakan</option>
                 <option value={false}>Tidak Disewakan</option>
               </Form.Select>
             </Form.Group>
-          <a href="">
-            <Link to="/detail">Cari Mobil</Link>
-          </a>
-          {/* <button classname="">Cari Mobil
+              <button href="">
+              <Link style={{ color: "white", textDecoration: "none" }} to="/detail">Cari Mobil</Link>
+              </button>
+              {/* <button classname="">Cari Mobil
               </button> */}
+          </div>
+            </fieldset>
         </Form>
       </Card>
 
@@ -182,8 +186,9 @@ const BannerDetail = () => {
         {/* key={detailData.id} */}
           <div className="car__Wrapper" >
             <img className="carImg" src={detailData.image} alt={detailData.name} />
-            <div>{detailData.name}</div>
-            <div className="detailPrice">{detailData.price}</div>
+            <div><p>{detailData.name}</p></div>
+            <div className="carCategory">{detailData.category}</div>
+            <div className="detailPrice"><p>Total      Rp. {detailData.price} </p></div>
           </div>
 
         

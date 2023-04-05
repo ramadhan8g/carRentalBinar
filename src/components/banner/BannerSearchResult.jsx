@@ -194,7 +194,7 @@ const BannerSearchResult = () => {
 
 
             <button onClick={handleClick}>
-              <Link to="/searchresult" 
+              <Link style={{ color: "white", textDecoration: "none" }}  to="/searchresult" 
               state={{ name, category, price, isRented }}
               >Edit
               </Link>
@@ -212,7 +212,7 @@ const BannerSearchResult = () => {
           <img className="carImg" src={car.image} alt={car.name} />
           <div>{car.name}</div>
           <div className="carCategory">{car.category}</div>
-          <div className="carPrice">{car.price}</div>
+          <div className="carPrice">Rp {car.price}/ hari</div>
           <div className="carStatus">{car.status}</div>
           <div className="carDetail">
            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam,
